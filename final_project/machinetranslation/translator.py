@@ -22,9 +22,6 @@ language_translator = LanguageTranslatorV3(
 
 language_translator.set_service_url(url)
 
-# languages = language_translator.list_identifiable_languages().get_result()
-# print(json.dumps(languages, indent=2))
-
 def english_to_french(english_text):
     """ translate english to french """
     translation = language_translator.translate(
